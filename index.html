@@ -37,6 +37,24 @@
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-12px); }
+      }
+      @keyframes drift {
+        0%, 100% { transform: translateX(0px) translateY(0px); }
+        50% { transform: translateX(8px) translateY(-8px); }
+      }
+      .hero-float { animation: floatSlow 9s ease-in-out infinite; }
+      .hero-drift { animation: drift 12s ease-in-out infinite; }
+      .hero-pattern {
+        background-image: radial-gradient(rgba(15, 23, 42, 0.07) 1px, transparent 1px);
+        background-size: 18px 18px;
+        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent 70%);
+        -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), transparent 70%);
+      }
+    </style>
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-100">
     <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-md">
@@ -55,8 +73,9 @@
     <main>
       <section class="relative isolate overflow-hidden">
         <div class="pointer-events-none absolute inset-0 -z-10">
-          <div class="absolute left-1/2 top-[-8rem] h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-200/40 blur-3xl"></div>
-          <div class="absolute right-[12%] top-[20%] h-64 w-64 rounded-full bg-sky-200/35 blur-3xl"></div>
+          <div class="hero-pattern absolute inset-x-0 top-0 h-56 opacity-40"></div>
+          <div class="hero-float absolute left-1/2 top-[-8rem] h-72 w-72 -translate-x-1/2 rounded-full bg-emerald-200/40 blur-3xl"></div>
+          <div class="hero-drift absolute right-[12%] top-[20%] h-64 w-64 rounded-full bg-sky-200/35 blur-3xl"></div>
           <div class="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-white/70 to-transparent"></div>
         </div>
 
