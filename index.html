@@ -161,6 +161,14 @@
       .feature-e { background: #eff6ff; color: #1d4ed8; }
       .feature-f { background: #f0fdf4; color: #166534; }
 
+      .faq-list {
+        border: 1px solid #e2e8f0;
+        border-radius: 1rem;
+        background: #fff;
+        overflow: hidden;
+      }
+      .faq-item { border-top: 1px solid #e2e8f0; }
+      .faq-item:first-child { border-top: none; }
       .faq-item summary { list-style: none; }
       .faq-item summary::-webkit-details-marker { display: none; }
       .faq-icon { transition: transform 0.2s ease; }
@@ -393,69 +401,69 @@
           <p class="mt-3 text-slate-600">Quick answers to common rollout, integration, and pilot questions.</p>
         </div>
 
-        <div class="mt-8 space-y-3">
-          <details class="faq-item soft-card rounded-2xl p-5" open>
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+        <div class="faq-list mt-8">
+          <details class="faq-item" open>
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>Is this officially integrated with ICE or IET submission portals?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">The platform is UK-SPEC aligned and export-ready for application workflows. Direct integrations can be scoped separately.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">The platform is UK-SPEC aligned and export-ready for application workflows. Direct integrations can be scoped separately.</p>
           </details>
 
-          <details class="faq-item soft-card rounded-2xl p-5">
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+          <details class="faq-item">
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>Can candidates and managers both use the system?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Yes. Candidates log evidence and CPD, while managers and mentors review progression and provide structured feedback.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">Yes. Candidates log evidence and CPD, while managers and mentors review progression and provide structured feedback.</p>
           </details>
 
-          <details class="faq-item soft-card rounded-2xl p-5">
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+          <details class="faq-item">
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>Can we pilot first before a full rollout?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Absolutely. Most customers start with one business unit and expand after proving improved readiness.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">Absolutely. Most customers start with one business unit and expand after proving improved readiness.</p>
           </details>
 
-          <details class="faq-item soft-card rounded-2xl p-5">
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+          <details class="faq-item">
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>How long does onboarding usually take?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Most pilot teams can be onboarded in 1-2 weeks, depending on number of users and readiness of your current CPD/evidence process.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">Most pilot teams can be onboarded in 1-2 weeks, depending on number of users and readiness of your current CPD/evidence process.</p>
           </details>
 
-          <details class="faq-item soft-card rounded-2xl p-5">
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+          <details class="faq-item">
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>What does a typical pilot include?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">A pilot usually covers one business unit, configured competencies, manager workflows, and reporting so you can validate adoption and outcome improvements quickly.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">A pilot usually covers one business unit, configured competencies, manager workflows, and reporting so you can validate adoption and outcome improvements quickly.</p>
           </details>
 
-          <details class="faq-item soft-card rounded-2xl p-5">
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+          <details class="faq-item">
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>Do you support data export and portability?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Yes. You can export evidence packs and relevant progression data to support submission prep, internal reporting, and continuity needs.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">Yes. You can export evidence packs and relevant progression data to support submission prep, internal reporting, and continuity needs.</p>
           </details>
 
-          <details class="faq-item soft-card rounded-2xl p-5">
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+          <details class="faq-item">
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>Can this work alongside our existing tools?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Yes. Many teams run CPDPath alongside existing HR/L&D and project systems during pilot, then formalise integration priorities after proving value.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">Yes. Many teams run CPDPath alongside existing HR/L&D and project systems during pilot, then formalise integration priorities after proving value.</p>
           </details>
 
-          <details class="faq-item soft-card rounded-2xl p-5">
-            <summary class="flex cursor-pointer items-start justify-between gap-4 font-medium text-slate-900">
+          <details class="faq-item">
+            <summary class="flex cursor-pointer items-start justify-between gap-4 px-5 py-5 font-medium text-slate-900">
               <span>What support do we get during rollout?</span>
               <span class="faq-icon inline-flex h-7 w-7 items-center justify-center rounded-full border border-slate-300 text-lg text-slate-600">+</span>
             </summary>
-            <p class="mt-3 text-sm leading-6 text-slate-600">You get onboarding guidance, workflow setup support, and practical rollout advice focused on manager adoption and candidate consistency.</p>
+            <p class="px-5 pb-5 text-sm leading-6 text-slate-600">You get onboarding guidance, workflow setup support, and practical rollout advice focused on manager adoption and candidate consistency.</p>
           </details>
         </div>
       </section>
@@ -486,6 +494,16 @@
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+
+      const faqItems = Array.from(document.querySelectorAll('.faq-item'));
+      faqItems.forEach((item) => {
+        item.addEventListener('toggle', () => {
+          if (!item.open) return;
+          faqItems.forEach((other) => {
+            if (other !== item) other.open = false;
+          });
+        });
+      });
 
       function trackCtaClick(name, href) {
         const payload = {
