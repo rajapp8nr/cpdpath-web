@@ -117,16 +117,17 @@
       }
 
       .btn-primary {
-        border-radius: 10px;
+        border-radius: 0.75rem;
         background: #2563eb;
         color: #fff;
         font-weight: 600;
+        border: 1px solid #1d4ed8;
       }
 
       .btn-primary:hover { background: #1d4ed8; }
 
       .btn-secondary {
-        border-radius: 10px;
+        border-radius: 0.75rem;
         border: 1px solid #dbe1ea;
         background: #fff;
         color: #334155;
@@ -138,7 +139,13 @@
       .soft-card {
         border: 1px solid #e2e8f0;
         background: #fff;
-        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 10px 22px rgba(15, 23, 42, 0.04);
+        box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03), 0 6px 16px rgba(15, 23, 42, 0.04);
+      }
+
+      .section-title {
+        font-size: clamp(1.65rem, 2.4vw, 2rem);
+        line-height: 1.12;
+        letter-spacing: -0.02em;
       }
 
       .feature-icon {
@@ -188,9 +195,9 @@
   <body class="bg-white text-slate-900 antialiased">
     <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div class="border-b border-slate-100 bg-slate-50/80">
-        <div class="mx-auto max-w-7xl px-6 py-2 text-[11px] font-medium text-slate-600"><span class="inline-flex h-1.5 w-1.5 rounded-full bg-green-600 align-middle mr-2"></span>Trusted by engineering teams building structured CPD and career progression.</div>
+        <div class="mx-auto max-w-6xl px-6 py-2 text-[11px] font-medium text-slate-600"><span class="inline-flex h-1.5 w-1.5 rounded-full bg-blue-600 align-middle mr-2"></span>Trusted by engineering teams building structured CPD and career progression.</div>
       </div>
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="/" class="flex items-center gap-2 text-lg font-semibold tracking-tight">
           <img src="/assets/branding/logo-path-milestone.svg" alt="CPDPath logo" class="h-8 w-8 rounded-md" loading="eager" decoding="async" />
           <span>CPDPath</span>
@@ -209,7 +216,7 @@
       <section class="relative isolate border-b border-slate-200 bg-slate-50/70">
         <div class="hero-abstract" aria-hidden="true"></div>
         <div class="hero-grid" aria-hidden="true"></div>
-        <div class="relative mx-auto grid max-w-7xl gap-10 px-6 py-16 sm:py-20 lg:py-24 lg:grid-cols-2 lg:items-center">
+        <div class="relative mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:py-16 lg:py-20 lg:grid-cols-2 lg:items-center">
           <div>
             <p class="inline-flex rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-600">Built for engineering employers in the UK</p>
             <h1 class="mt-6 max-w-[18ch] text-[clamp(2.1rem,8vw,3.4rem)] font-bold leading-[1.1] tracking-[-0.02em] text-balance">The easiest way to run <span class="text-slate-600">engineering CPD and career pathways</span></h1>
@@ -271,7 +278,7 @@
       </section>
 
       <section class="border-b border-slate-200 bg-white">
-        <div class="mx-auto max-w-7xl px-6 py-5">
+        <div class="mx-auto max-w-6xl px-6 py-5">
           <p class="text-center text-xs font-semibold uppercase tracking-wide text-slate-500">Teams and leaders this workflow is built for</p>
           <div class="mt-3 grid grid-cols-2 gap-3 text-center text-xs text-slate-600 sm:grid-cols-4">
             <div class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">Engineering Directors</div>
@@ -280,7 +287,7 @@
             <div class="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">Professional Development Teams</div>
           </div>
         </div>
-        <div class="mx-auto grid max-w-7xl gap-4 px-6 py-6 sm:py-8 text-sm text-slate-600 sm:grid-cols-3">
+        <div class="mx-auto grid max-w-6xl gap-4 px-6 py-6 sm:py-8 text-sm text-slate-600 sm:grid-cols-3">
           <div class="soft-card rounded-xl p-4">
             <p class="text-2xl font-bold text-slate-900">A-E</p>
             <p class="mt-1">Built around full UK-SPEC competency mapping.</p>
@@ -296,9 +303,9 @@
         </div>
       </section>
 
-      <section id="features" class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:py-20">
+      <section id="features" class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20">
         <div class="max-w-3xl">
-          <h2 class="text-3xl font-bold tracking-tight">Everything you need to improve registration outcomes</h2>
+          <h2 class="section-title font-bold">Everything you need to improve registration outcomes</h2>
           <p class="mt-3 text-slate-600">A clean, practical workflow for candidates, mentors, and engineering leadership.</p>
         </div>
 
@@ -337,7 +344,7 @@
       </section>
 
       <section class="border-y border-slate-200 bg-slate-50/70">
-        <div class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:py-20">
+        <div class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20">
           <div class="grid gap-8 lg:grid-cols-2">
             <div class="soft-card rounded-2xl p-6">
               <h3 class="text-xl font-semibold">Competing on value, not enterprise complexity</h3>
@@ -351,8 +358,8 @@
         </div>
       </section>
 
-      <section id="pricing" class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:py-20">
-        <h2 class="text-3xl font-bold tracking-tight">Simple pricing</h2>
+      <section id="pricing" class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20">
+        <h2 class="section-title font-bold">Simple pricing</h2>
         <div class="mt-8 grid gap-6 lg:grid-cols-2">
           <div class="soft-card rounded-2xl p-6">
             <h3 class="text-xl font-semibold">Pilot</h3>
@@ -380,8 +387,8 @@
       </section>
 
       <section id="testimonials" class="border-y border-slate-200 bg-slate-50/70">
-        <div class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:py-20">
-          <h2 class="text-3xl font-bold tracking-tight">What teams say</h2>
+        <div class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20">
+          <h2 class="section-title font-bold">What teams say</h2>
           <div class="mt-8 grid gap-5 md:grid-cols-3">
             <blockquote class="soft-card rounded-xl p-5 text-sm text-slate-700">
               “We finally have a consistent process for CEng evidence across our offices.”
@@ -399,10 +406,10 @@
         </div>
       </section>
 
-      <section id="lead-magnet" class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:py-20">
+      <section id="lead-magnet" class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20">
         <div class="soft-card rounded-2xl p-8 md:p-10">
           <p class="text-xs font-semibold uppercase tracking-wide text-slate-500">Free resource</p>
-          <h2 class="mt-2 text-3xl font-bold tracking-tight">UK-SPEC Readiness Checklist (for engineering teams)</h2>
+          <h2 class="section-title mt-2 font-bold">UK-SPEC Readiness Checklist (for engineering teams)</h2>
           <p class="mt-3 max-w-3xl text-slate-600">Use this practical checklist to assess competency evidence quality, manager review cadence, and candidate readiness before your next CEng/IEng submission cycle.</p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a href="/thank-you.html?source=checklist" data-cta="leadmagnet_email_checklist" class="btn-primary px-5 py-3 text-sm">Email me the checklist</a>
@@ -411,9 +418,9 @@
         </div>
       </section>
 
-      <section id="faq" class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:py-20">
+      <section id="faq" class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20">
         <div class="max-w-3xl">
-          <h2 class="text-3xl font-bold tracking-tight">Frequently asked questions</h2>
+          <h2 class="section-title font-bold">Frequently asked questions</h2>
           <p class="mt-3 text-slate-600">Quick answers to common rollout, integration, and pilot questions.</p>
         </div>
 
@@ -501,7 +508,7 @@
       </section>
 
       <section id="cta" class="bg-slate-900 text-white">
-        <div class="mx-auto max-w-7xl px-6 py-14 sm:py-16 lg:py-20 text-center">
+        <div class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20 text-center">
           <h2 class="text-3xl font-bold tracking-tight">Ready to improve your professional registration pipeline?</h2>
           <p class="mx-auto mt-3 max-w-2xl text-slate-300">Book a short demo and see how your team can move from ad-hoc notes to a clear UK-SPEC evidence journey.</p>
           <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
@@ -513,7 +520,7 @@
     </main>
 
     <footer class="border-t border-slate-200 bg-white">
-      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
+      <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
         <p>© <span id="year"></span> CPDPath. All rights reserved.</p>
         <div class="flex flex-wrap items-center gap-4">
           <a href="/privacy.html" class="hover:text-slate-900">Privacy</a>
