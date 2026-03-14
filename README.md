@@ -1,6 +1,11 @@
-# CPDPath Marketing Site
+# CPDPath Web (`cpdpath-web`)
 
 SEO-focused marketing website for **CPDPath** (`cpdpath.com`).
+
+## Repository structure
+
+- `cpdpath-web` → marketing website (this repo)
+- `cpdpath-app` → core product application (separate repo)
 
 ## Local preview
 
