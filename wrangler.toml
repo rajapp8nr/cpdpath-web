@@ -6,6 +6,10 @@ compatibility_date = "2026-03-14"
 directory = "."
 binding = "ASSETS"
 
+[vars]
+FROM_EMAIL = "noreply@yourdomain.com"
+DEST_EMAIL = "you@yourdomain.com"
+
 [observability]
 
 [observability.logs]
