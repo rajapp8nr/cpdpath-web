@@ -8,7 +8,21 @@ export default {
     }
 
     // Serve static assets from the repository root via ASSETS binding.
-    return env.ASSETS.fetch(request)
+    const res = await env.ASSETS.fetch(request)
+
+    const contentType = res.headers.get('content-type') || ''
+    if (!contentType.includes('text/html')) {
+      return res
+    }
+
+    const headers = new Headers(res.headers)
+    headers.set('Content-Security-Policy', buildCspHeader())
+
+    return new Response(res.body, {
+      status: res.status,
+      statusText: res.statusText,
+      headers,
+    })
   },
 }
 
@@ -138,4 +152,21 @@ function buildCorsHeaders(origin, env) {
     'Access-Control-Allow-Headers': 'Content-Type',
     Vary: 'Origin',
   }
+}
+
+function buildCspHeader() {
+  return [
+    "default-src 'self'",
+    "base-uri 'self'",
+    "object-src 'none'",
+    "frame-ancestors 'self'",
+    "img-src 'self' data: https:",
+    "font-src 'self' data: https:",
+    "style-src 'self' 'unsafe-inline'",
+    "script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com",
+    "frame-src https://challenges.cloudflare.com",
+    "connect-src 'self' https://challenges.cloudflare.com https://api.smtp2go.com",
+    "form-action 'self'",
+    "upgrade-insecure-requests",
+  ].join('; ')
 }
