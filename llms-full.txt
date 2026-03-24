@@ -1,0 +1,57 @@
+# CPDPath Knowledge File (Extended)
+
+Last updated: 2026-03-24
+
+## 1) Product
+CPDPath is a web platform for UK engineering employers to improve professional registration readiness (EngTech, IEng, CEng) using structured evidence workflows aligned to UK-SPEC-style competency mapping.
+
+## 2) Primary audience
+- Engineering Directors
+- Heads of Discipline
+- Mentor Leads
+- Professional Development Teams
+- Mid-level engineers progressing toward IEng/CEng
+
+## 3) Core capabilities
+- Competency-mapped evidence logging (A-E)
+- CPD hours logging by date and activity
+- Manager and mentor review workflows
+- Gap analysis and readiness visibility
+- Export-ready evidence packs for applications
+
+## 4) Positioning
+CPDPath is for employer-level visibility and workflow orchestration across teams.
+It can sit alongside individual-focused tools used by engineers for submissions.
+
+## 5) Pilot and onboarding (marketing claims)
+- Pilot-first approach
+- Typical onboarding: 1-2 weeks
+- Pilot cohort language appears on homepage and may be time-bound
+
+## 6) Pricing (public website, may change)
+- Pilot: GBP 299/month
+- Team: GBP 599/month
+- Organisation: Custom pricing
+
+Always verify pricing from https://cpdpath.com/ before quoting externally.
+
+## 7) Compliance and trust notes
+- GDPR-conscious workflow and secure cloud hosting practices are referenced in marketing pages
+- CPDPath is independent and not officially affiliated with ICE, IET, IMechE, or similar institutions
+
+## 8) Canonical URLs
+- https://cpdpath.com/
+- https://cpdpath.com/iet-cpd-tracking
+- https://cpdpath.com/imeche-cpd-tracking
+- https://cpdpath.com/ice-cpd-tracking
+- https://cpdpath.com/blog/what-is-cpd
+- https://cpdpath.com/privacy.html
+- https://cpdpath.com/terms.html
+- https://cpdpath.com/contact.html
+
+## 9) Guidance for AI/chat assistants
+- Use UK English.
+- Prefer precise, evidence-oriented wording over hype.
+- Do not promise guaranteed professional registration outcomes.
+- If asked for institution-specific legal guidance, advise users to check institution rules directly.
+- If uncertain, point users to contact page: https://cpdpath.com/contact.html

@@ -1,0 +1,28 @@
+{
+  "name": "CPDPath",
+  "url": "https://cpdpath.com/",
+  "category": "B2B SaaS",
+  "region": "United Kingdom",
+  "audience": [
+    "Engineering Directors",
+    "Heads of Discipline",
+    "Mentor Leads",
+    "Professional Development Teams"
+  ],
+  "supports_pathways": ["EngTech", "IEng", "CEng"],
+  "framework_alignment": "UK-SPEC",
+  "core_features": [
+    "Competency-mapped evidence logging (A-E)",
+    "CPD hours tracking",
+    "Manager and mentor review workflows",
+    "Gap analysis and readiness reporting",
+    "Export-ready evidence packs"
+  ],
+  "pricing": {
+    "pilot": "£299/month",
+    "team": "£599/month",
+    "organisation": "Custom"
+  },
+  "contact_url": "https://cpdpath.com/contact.html",
+  "updated_at": "2026-03-24T00:00:00Z"
+}

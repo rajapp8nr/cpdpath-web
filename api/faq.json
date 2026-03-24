@@ -1,0 +1,25 @@
+{
+  "updated_at": "2026-03-24T00:00:00Z",
+  "faqs": [
+    {
+      "question": "Is this officially integrated with ICE or IET submission portals?",
+      "answer": "The platform is UK-SPEC aligned and export-ready for application workflows. Direct integrations can be scoped separately."
+    },
+    {
+      "question": "Can candidates and managers both use the system?",
+      "answer": "Yes. Candidates log evidence and CPD, while managers and mentors review progression and provide structured feedback."
+    },
+    {
+      "question": "Can we pilot first before a full rollout?",
+      "answer": "Absolutely. Most customers start with one business unit and expand after proving improved readiness."
+    },
+    {
+      "question": "How long does onboarding usually take?",
+      "answer": "Most pilot teams can be onboarded in 1-2 weeks, depending on number of users and readiness of your current CPD and evidence process."
+    },
+    {
+      "question": "Can we track CPD hours and evidence in one place?",
+      "answer": "Yes. CPDPath supports structured CPD hours logging alongside competency-linked evidence, so teams can monitor both activity and readiness in one workflow."
+    }
+  ]
+}
