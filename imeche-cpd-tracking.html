@@ -33,13 +33,11 @@
     <noscript><link rel="stylesheet" href="/assets/tailwind.css" /></noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 </head>
   <body class="bg-white text-slate-900 antialiased" style="font-family:'Inter',ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;">
-    <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur"><div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"><a href="/" class="flex items-center"><img src="/assets/branding/cpdpath-kit/svg/CPDPATH-01.svg" class="h-8 w-auto" alt="CPDPath"/></a><a href="/#cta" class="rounded-xl bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">Book a pilot walkthrough</a></div></header>
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur"><div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4"><a href="/" class="flex items-center"><img src="/assets/branding/cpdpath-kit/svg/CPDPATH-01.svg" class="h-8 w-auto" alt="CPDPath"/></a><a href="/#cta" class="rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-700">Book a pilot walkthrough</a></div></header>
     <main class="mx-auto max-w-6xl px-6 py-14 sm:py-16 lg:py-20">
       <p class="text-sm text-slate-600"><a class="hover:underline" href="/">Home</a> / IMechE CPD Tracking</p>
       <h1 class="mt-4 max-w-4xl text-[clamp(2rem,4vw,3rem)] font-bold leading-tight tracking-tight">IMechE CPD tracking and competency evidence workflow for employers</h1>
@@ -74,21 +72,23 @@
           <p class="mt-3 text-slate-600">Track readiness by candidate and team before application windows.</p>
         </div>
       </section>
-      <section class="mt-12 rounded-2xl border border-slate-900 bg-slate-900 p-8 text-white"><h2 class="text-2xl font-bold">Pilot CPDPath in one business unit</h2><p class="mt-2 max-w-2xl text-slate-300">Validate outcomes quickly with a practical 90-day pilot model.</p><a href="/#cta" class="mt-5 inline-flex rounded-xl bg-white px-5 py-3 text-sm font-semibold text-slate-900">Book a pilot walkthrough</a></section>
+      <section class="mt-12 rounded-2xl border border-slate-900 bg-slate-900 p-8 text-white"><h2 class="text-2xl font-bold">Pilot CPDPath in one business unit</h2><p class="mt-2 max-w-2xl text-slate-300">Validate outcomes quickly with a practical 90-day pilot model.</p><a href="/#cta" class="mt-5 inline-flex rounded-full bg-white px-5 py-3 text-sm font-semibold text-slate-900">Book a pilot walkthrough</a></section>
     </main>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"IMechE CPD Tracking and UK-SPEC Workflow","url":"https://cpdpath.com/imeche-cpd-tracking","description":"Manage IMechE CPD hours, UK-SPEC competency evidence and CEng/IEng readiness with structured team workflows."}</script>
     <footer class="border-t border-slate-200 bg-white mt-20">
       <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
         <p>© <span id="year"></span> CPDPath. All rights reserved.</p>
-        <div class="flex flex-wrap items-center gap-4">
-          <a href="/iet-cpd-tracking" class="hover:text-slate-900">IET</a>
-          <a href="/imeche-cpd-tracking" class="hover:text-slate-900">IMechE</a>
-          <a href="/ice-cpd-tracking" class="hover:text-slate-900">ICE</a>
-          <a href="/blog/what-is-cpd" class="hover:text-slate-900">Blog</a>
-          <a href="/privacy.html" class="hover:text-slate-900">Privacy</a>
-          <a href="/terms.html" class="hover:text-slate-900">Terms</a>
-          <a href="/contact.html" class="hover:text-slate-900">Contact</a>
-        </div>
+        <nav aria-label="Footer">
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="/iet-cpd-tracking" class="hover:text-slate-900">IET</a>
+            <a href="/imeche-cpd-tracking" class="hover:text-slate-900">IMechE</a>
+            <a href="/ice-cpd-tracking" class="hover:text-slate-900">ICE</a>
+            <a href="/blog/what-is-cpd" class="hover:text-slate-900">Blog</a>
+            <a href="/privacy.html" class="hover:text-slate-900">Privacy</a>
+            <a href="/terms.html" class="hover:text-slate-900">Terms</a>
+            <a href="/contact.html" class="hover:text-slate-900">Contact</a>
+          </div>
+        </nav>
       </div>
     </footer>
     <script>document.getElementById("year").textContent = new Date().getFullYear();</script>

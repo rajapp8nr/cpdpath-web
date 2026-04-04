@@ -232,8 +232,6 @@
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"></noscript>
 </head>
@@ -721,16 +719,18 @@
     <footer class="border-t border-slate-200 bg-white">
       <div class="mx-auto flex max-w-6xl flex-col gap-3 px-6 py-8 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
         <p>© <span id="year"></span> CPDPath. All rights reserved.</p>
-        <div class="flex flex-wrap items-center gap-4">
-          <a href="/iet-cpd-tracking" class="hover:text-slate-900">IET</a>
-          <a href="/imeche-cpd-tracking" class="hover:text-slate-900">IMechE</a>
-          <a href="/ice-cpd-tracking" class="hover:text-slate-900">ICE</a>
-          <a href="/blog/what-is-cpd" class="hover:text-slate-900">Blog</a>
-          <a href="/privacy.html" class="hover:text-slate-900">Privacy</a>
-          <a href="/terms.html" class="hover:text-slate-900">Terms</a>
-          <a href="/contact.html" class="hover:text-slate-900">Contact</a>
-          <span>Built for engineering career progression in the UK.</span>
-        </div>
+        <nav aria-label="Footer">
+          <div class="flex flex-wrap items-center gap-4">
+            <a href="/iet-cpd-tracking" class="hover:text-slate-900">IET</a>
+            <a href="/imeche-cpd-tracking" class="hover:text-slate-900">IMechE</a>
+            <a href="/ice-cpd-tracking" class="hover:text-slate-900">ICE</a>
+            <a href="/blog/what-is-cpd" class="hover:text-slate-900">Blog</a>
+            <a href="/privacy.html" class="hover:text-slate-900">Privacy</a>
+            <a href="/terms.html" class="hover:text-slate-900">Terms</a>
+            <a href="/contact.html" class="hover:text-slate-900">Contact</a>
+            <span>Built for engineering career progression in the UK.</span>
+          </div>
+        </nav>
       </div>
     </footer>
 
